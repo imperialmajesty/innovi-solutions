@@ -137,12 +137,6 @@ export function AboutSection() {
             </div>
           ))}
         </div>
-
-        <p className="mt-8 sm:mt-10 text-sm font-mono text-muted-foreground max-w-3xl">
-          Shared credentials: postgraduate degrees across Computer Science, Information Systems,
-          and Property Studies · combined experience across business analysis, data modelling, AI
-          engineering, automation, evaluation, and software engineering.
-        </p>
       </div>
     </section>
   );
