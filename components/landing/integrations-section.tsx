@@ -48,7 +48,7 @@ export function IntegrationsSection() {
             every build.
           </h2>
           <p className="text-xl text-muted-foreground">
-            Proven, modern tooling — chosen for reliability and clarity, not hype.
+            Proven, modern tooling, chosen for reliability and clarity, not hype.
           </p>
         </div>
 

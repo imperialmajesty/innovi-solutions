@@ -7,10 +7,10 @@ const steps = [
     number: "I",
     title: "Discover",
     description: "We map your workflows, data, and goals before a line of code.",
-    code: `# Stage 01 — Discover
-- map current workflows
-- audit data + systems
-- define goals & scope
+    code: `# Stage 01: Discover
+• map current workflows
+• audit data + systems
+• define goals & scope
 
 > proven core selected`,
   },
@@ -18,21 +18,21 @@ const steps = [
     number: "II",
     title: "Design",
     description: "Architecture and interfaces drawn to spec, reviewed with you.",
-    code: `# Stage 02 — Design
-- architecture drafted
-- interfaces to spec
-- reviewed with you
+    code: `# Stage 02: Design
+• architecture drafted
+• interfaces to spec
+• reviewed with you
 
 > forged to fit`,
   },
   {
     number: "III",
     title: "Build",
-    description: "Iterative delivery — you see working software early and often.",
-    code: `# Stage 03 — Build
-- iterative delivery
-- working software early
-- feedback each cycle
+    description: "Iterative delivery, you see working software early and often.",
+    code: `# Stage 03: Build
+• iterative delivery
+• working software early
+• feedback each cycle
 
 > shaped build`,
   },
@@ -40,21 +40,21 @@ const steps = [
     number: "IV",
     title: "Deploy",
     description: "Shipped to production on infrastructure we set up and own.",
-    code: `# Stage 04 — Deploy
-- infra we set up & own
-- shipped to production
-- live & owned by you
+    code: `# Stage 04: Deploy
+• infra we set up & own
+• shipped to production
+• live & owned by you
 
 > your system`,
   },
   {
     number: "V",
     title: "Support",
-    description: "Ongoing hosting, monitoring, and maintenance after go-live.",
-    code: `# Stage 05 — Support
-- hosting + monitoring
-- updates & patching
-- a real person to call
+    description: "Ongoing hosting, monitoring, and maintenance after go live.",
+    code: `# Stage 05: Support
+• hosting + monitoring
+• updates & patching
+• a real person to call
 
 > we maintain what we ship`,
   },
@@ -124,8 +124,8 @@ export function HowItWorksSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Most software is either fully custom — slow and expensive — or fully off-the-shelf —
-            fast, but never quite right. INNOVI starts with a proven base and forges it to your
+            Most software is either fully custom (slow and expensive) or fully off the shelf
+            (fast, but never quite right). INNOVI starts with a proven base and forges it to your
             business: your workflows, your data, your brand. Here&apos;s what happens between
             booking a session and going live.
           </p>

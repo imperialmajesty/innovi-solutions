@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import { AnimatedTetrahedron } from "./animated-tetrahedron";
 
 export function CtaSection() {
@@ -62,7 +61,7 @@ export function CtaSection() {
                 </h2>
 
                 <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
-                  Tell us the problem. We&apos;ll tell you the shortest path to a system that fits —
+                  Tell us the problem. We&apos;ll tell you the shortest path to a system that fits,
                   from custom software and SaaS to AI automation and data engineering.
                 </p>
 
@@ -74,7 +73,6 @@ export function CtaSection() {
                   >
                     <a href="/book">
                       Book a Session
-                      <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </a>
                   </Button>
                   <Button
@@ -110,7 +108,7 @@ export function CtaSection() {
                     <div className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-2">
                       Working with
                     </div>
-                    <div className="text-sm text-foreground">Remote-first, global clients</div>
+                    <div className="text-sm text-foreground">Remote, global clients</div>
                   </div>
                 </div>
               </div>

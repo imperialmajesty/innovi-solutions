@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "Services", href: "#services" },
@@ -81,14 +80,10 @@ export function Navigation({ hrefPrefix = "" }: { hrefPrefix?: string }) {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-sm font-medium uppercase tracking-widest"
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
+            {isMobileMenuOpen ? "Close" : "Menu"}
           </button>
         </div>
 

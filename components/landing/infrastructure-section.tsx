@@ -5,9 +5,9 @@ import { useEffect, useState, useRef } from "react";
 const locations = [
   { city: "Monitoring", region: "Always watching your systems", latency: "Active" },
   { city: "Updates", region: "Dependencies & features", latency: "Ongoing" },
-  { city: "Security patching", region: "POPIA-aligned, encrypted", latency: "Included" },
-  { city: "Backups", region: "Restorable, off-site", latency: "Daily" },
-  { city: "On-call support", region: "A real person to call", latency: "Retainer" },
+  { city: "Security patching", region: "POPIA aligned, encrypted", latency: "Included" },
+  { city: "Backups", region: "Restorable, off site", latency: "Daily" },
+  { city: "On call support", region: "A real person to call", latency: "Retainer" },
 ];
 
 export function InfrastructureSection() {
@@ -55,7 +55,7 @@ export function InfrastructureSection() {
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-12">
               One team, no handoffs. We design, build, and deploy to production on infrastructure we
-              set up and own — then handle hosting, monitoring, and maintenance after go-live. We
+              set up and own, then handle hosting, monitoring, and maintenance after go-live. We
               don&apos;t abandon what we ship.
             </p>
 

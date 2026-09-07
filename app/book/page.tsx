@@ -4,9 +4,9 @@ import { FooterSection } from "@/components/landing/footer-section";
 import { BookingForm } from "@/components/booking/booking-form";
 
 export const metadata: Metadata = {
-  title: "Book a Session — INNOVI Solutions",
+  title: "Book a Session | INNOVI Solutions",
   description:
-    "Book a free discovery call or a technical deep-dive with INNOVI Solutions. Tell us the problem and we'll map the shortest path to a system that fits.",
+    "Book a free discovery call or a technical deep dive with INNOVI Solutions. Tell us the problem and we'll map the shortest path to a system that fits.",
 };
 
 export default function BookPage() {
@@ -28,8 +28,8 @@ export default function BookPage() {
               you need built.
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed text-pretty max-w-2xl">
-              Book a free discovery call or a technical deep-dive. Tell us the problem and we&apos;ll
-              map the shortest path to a system that fits — from custom software and SaaS to AI
+              Book a free discovery call or a technical deep dive. Tell us the problem and we&apos;ll
+              map the shortest path to a system that fits, from custom software and SaaS to AI
               automation and data engineering.
             </p>
           </div>

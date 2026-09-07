@@ -13,7 +13,6 @@ const footerLinks = {
   ],
   Trust: [
     { name: "How We Handle Your Data", href: "#how-we-handle-your-data" },
-    { name: "Selected Work", href: "#work" },
     { name: "Built With", href: "#integrations" },
   ],
   Contact: [
@@ -87,7 +86,7 @@ export function FooterSection({ hrefPrefix = "" }: { hrefPrefix?: string }) {
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-green-500" />
-              Remote-first, global clients
+              Remote, global clients
             </span>
           </div>
         </div>

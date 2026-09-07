@@ -1,32 +1,27 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 
 const securityFeatures = [
   {
-    icon: Eye,
     title: "Data minimization by design",
-    description: "We collect only what's needed to respond to your enquiry and scope your work — nothing speculative.",
+    description: "We collect only what's needed to respond to your enquiry and scope your work, nothing speculative.",
   },
   {
-    icon: Lock,
     title: "Encryption in transit and at rest",
     description: "Your data is protected on the wire and in storage.",
   },
   {
-    icon: Shield,
     title: "Strict access control",
-    description: "Row-level security and least-privilege access on our data layer — only the people who need to see an enquiry can.",
+    description: "Row level security and least privilege access on our data layer, only the people who need to see an enquiry can.",
   },
   {
-    icon: FileCheck,
-    title: "POPIA-aligned",
+    title: "POPIA aligned",
     description: "We process personal information under POPIA. Request removal of your data any time at queries@innovi-solutions.com.",
   },
 ];
 
-const certifications = ["POPIA", "Encryption", "Row-level security", "Least-privilege", "Data minimization"];
+const certifications = ["POPIA", "Encryption", "Row level security", "Least privilege", "Data minimization"];
 
 export function SecuritySection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -65,7 +60,7 @@ export function SecuritySection() {
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-12">
               We handle sensitive operational and customer data with the same discipline as the
-              systems we build for insurance and financial clients — encryption in transit and at
+              systems we build for insurance and financial clients: encryption in transit and at
               rest, strict access control, and data minimization by design.
             </p>
 
@@ -95,17 +90,10 @@ export function SecuritySection() {
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-10 h-10 flex items-center justify-center border border-foreground/10 group-hover:bg-foreground group-hover:text-background transition-colors duration-300">
-                    <feature.icon className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium mb-1 group-hover:translate-x-1 transition-transform duration-300">
-                      {feature.title}
-                    </h3>
-                    <p className="text-muted-foreground">{feature.description}</p>
-                  </div>
-                </div>
+                <h3 className="text-lg font-medium mb-1 group-hover:translate-x-1 transition-transform duration-300">
+                  {feature.title}
+                </h3>
+                <p className="text-muted-foreground">{feature.description}</p>
               </div>
             ))}
           </div>
