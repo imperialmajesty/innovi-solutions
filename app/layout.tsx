@@ -21,9 +21,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'INNOVI Solutions — The Forge for Custom Software & AI Automation Solutions',
+  title: 'INNOVI Solutions | The Forge for Custom Software & AI Automation Solutions',
   description:
-    'INNOVI SOLUTIONS designs and builds custom software, SaaS, data systems, and AI agents shaped around how your business actually operates — plus hosting and maintenance.',
+    'INNOVI SOLUTIONS designs and builds custom software, SaaS, data systems, and AI agents shaped around how your business actually operates, plus hosting and maintenance.',
   keywords: [
     'custom software development',
     'AI agents',
@@ -33,16 +33,16 @@ export const metadata: Metadata = {
     'INNOVI Solutions',
   ],
   openGraph: {
-    title: 'INNOVI Solutions — The Forge for Custom Software & AI',
+    title: 'INNOVI Solutions | The Forge for Custom Software & AI',
     description:
-      'A dev shop building custom software, SaaS, data systems, and AI agents — then hosting and maintaining what it ships.',
+      'A dev shop building custom software, SaaS, data systems, and AI agents, then hosting and maintaining what it ships.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'INNOVI Solutions — The Forge for Custom Software & AI',
+    title: 'INNOVI Solutions | The Forge for Custom Software & AI',
     description:
-      'A dev shop building custom software, SaaS, data systems, and AI agents — then hosting and maintaining what it ships.',
+      'A dev shop building custom software, SaaS, data systems, and AI agents, then hosting and maintaining what it ships.',
   },
 }
 

@@ -45,23 +45,23 @@ function AnimatedCounter({ end, suffix = "", prefix = "" }: { end: number; suffi
 }
 
 const metrics = [
-  { 
-    value: 4, 
-    suffix: "", 
+  {
+    value: 4,
+    suffix: "",
     prefix: "",
-    label: "Co-founders, hands-on on every build",
+    label: "Co founders, hands on every build",
   },
-  { 
-    value: 4, 
-    suffix: "", 
+  {
+    value: 4,
+    suffix: "",
     prefix: "",
     label: "Postgraduate Computer Science degrees",
   },
-  { 
-    value: 6, 
-    suffix: "", 
+  {
+    value: 6,
+    suffix: "",
     prefix: "",
-    label: "Disciplines in-house, end to end",
+    label: "Disciplines in house, end to end",
   },
   { 
     value: 7, 
@@ -112,8 +112,6 @@ export function MetricsSection() {
               <span className="w-2 h-2 rounded-full bg-green-500" />
               Verified
             </span>
-            <span className="text-foreground/30">|</span>
-            <span>UCT · #1 in Africa</span>
           </div>
         </div>
         

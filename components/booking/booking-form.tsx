@@ -2,7 +2,6 @@
 
 import { useState, useEffect, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Check, Mail, Clock, Globe, ShieldCheck } from "lucide-react";
 
 const sessionTypes = [
   {
@@ -13,7 +12,7 @@ const sessionTypes = [
   },
   {
     id: "technical",
-    title: "Technical Deep-Dive",
+    title: "Technical Deep Dive",
     duration: "60 min",
     detail: "architecture & feasibility",
   },
@@ -25,7 +24,7 @@ const focusAreas = [
   "Data Engineering & Automation",
   "AI Agents",
   "Hosting & Maintenance",
-  "Not sure yet — help me scope it",
+  "Not sure yet, help me scope it",
 ];
 
 const steps = [
@@ -65,9 +64,6 @@ export function BookingForm() {
       >
         {submitted ? (
           <div className="flex flex-col items-start gap-6 py-8">
-            <div className="w-14 h-14 rounded-full bg-foreground text-background flex items-center justify-center">
-              <Check className="w-7 h-7" />
-            </div>
             <div>
               <h2 className="text-3xl font-display tracking-tight mb-3">Request received.</h2>
               <p className="text-muted-foreground leading-relaxed max-w-md">
@@ -173,19 +169,16 @@ export function BookingForm() {
 
             {/* Focus area */}
             <Field label="What do you need built?" htmlFor="focus">
-              <div className="relative">
-                <select id="focus" name="focus" required defaultValue="" className={`${inputClass} appearance-none pr-10`}>
-                  <option value="" disabled>
-                    Select a focus area
+              <select id="focus" name="focus" required defaultValue="" className={`${inputClass} pr-10`}>
+                <option value="" disabled>
+                  Select a focus area
+                </option>
+                {focusAreas.map((area) => (
+                  <option key={area} value={area}>
+                    {area}
                   </option>
-                  {focusAreas.map((area) => (
-                    <option key={area} value={area}>
-                      {area}
-                    </option>
-                  ))}
-                </select>
-                <ArrowRight className="w-4 h-4 rotate-90 absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
-              </div>
+                ))}
+              </select>
             </Field>
 
             {/* Message */}
@@ -212,9 +205,7 @@ export function BookingForm() {
                   className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${
                     consent ? "border-foreground bg-foreground" : "border-foreground/30"
                   }`}
-                >
-                  {consent && <Check className="w-3.5 h-3.5 text-background" />}
-                </span>
+                />
               </span>
               <span className="text-xs leading-relaxed text-muted-foreground">
                 I consent to INNOVI Solutions storing and using the details I&apos;ve provided for the
@@ -228,8 +219,7 @@ export function BookingForm() {
 
             {/* Assurance strip (themed replacement for captcha) */}
             <div className="flex items-center gap-2 text-xs font-mono text-muted-foreground">
-              <ShieldCheck className="w-4 h-4" />
-              Encrypted in transit · Reviewed by a real person · POPIA-aligned
+              Encrypted in transit · Reviewed by a real person · POPIA aligned
             </div>
 
             <Button
@@ -238,7 +228,6 @@ export function BookingForm() {
               className="bg-foreground hover:bg-foreground/90 text-background rounded-full h-14 px-8 text-base group w-full sm:w-auto"
             >
               Request Session
-              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
             </Button>
           </form>
         )}
@@ -269,7 +258,7 @@ export function BookingForm() {
             Direct
           </h3>
           <ul className="flex flex-col gap-5">
-            <ContactRow icon={Mail} label="Email">
+            <ContactRow label="Email">
               <a
                 href="mailto:queries@innovi-solutions.com"
                 className="text-sm text-foreground hover:underline underline-offset-4 break-all"
@@ -277,11 +266,11 @@ export function BookingForm() {
                 queries@innovi-solutions.com
               </a>
             </ContactRow>
-            <ContactRow icon={Clock} label="Response Time">
+            <ContactRow label="Response Time">
               <span className="text-sm text-foreground">Within 1 business day</span>
             </ContactRow>
-            <ContactRow icon={Globe} label="Working With">
-              <span className="text-sm text-foreground">Remote-first, global clients</span>
+            <ContactRow label="Working With">
+              <span className="text-sm text-foreground">Remote, global clients</span>
             </ContactRow>
           </ul>
         </div>
@@ -313,25 +302,18 @@ function Field({
 }
 
 function ContactRow({
-  icon: Icon,
   label,
   children,
 }: {
-  icon: React.ElementType;
   label: string;
   children: React.ReactNode;
 }) {
   return (
-    <li className="flex items-start gap-4">
-      <span className="w-9 h-9 rounded-lg border border-foreground/10 flex items-center justify-center shrink-0">
-        <Icon className="w-4 h-4 text-foreground/70" />
+    <li className="flex flex-col gap-1">
+      <span className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground">
+        {label}
       </span>
-      <span className="flex flex-col gap-1">
-        <span className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground">
-          {label}
-        </span>
-        {children}
-      </span>
+      {children}
     </li>
   );
 }

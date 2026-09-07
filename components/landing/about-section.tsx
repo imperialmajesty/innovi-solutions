@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 
 const glanceFacts = [
   { label: "Focus", value: "Custom software, SaaS, data & AI agents" },
-  { label: "Also handles", value: "Hosting & long-term maintenance" },
-  { label: "Approach", value: "Proven cores, forged to fit" },
+  { label: "Also handles", value: "Hosting & ongoing maintenance" },
+  { label: "Approach", value: "Tested foundations, forged to fit" },
 ];
 
 const team = [
@@ -15,7 +15,7 @@ const team = [
   },
   {
     role: "Data Modelling & Data Engineering",
-    bio: "Designs the data layer — schemas, pipelines, and warehouses — so information is trustworthy, observable, and ready to feed dashboards, products, and AI.",
+    bio: "Designs the data layer, schemas, pipelines, and warehouses, so information is trustworthy, observable, and ready to feed dashboards, products, and AI.",
   },
   {
     role: "AI Engineering & Automation",
@@ -23,7 +23,7 @@ const team = [
   },
   {
     role: "Evaluation & Software Engineering",
-    bio: "Owns quality and reliability — evaluating models and systems against real-world thresholds so what goes live is measured, not assumed.",
+    bio: "Owns quality and reliability, evaluating models and systems against real world thresholds so what goes live is measured, not assumed.",
   },
 ];
 
@@ -67,7 +67,7 @@ export function AboutSection() {
               }`}
             >
               INNOVI is a dev shop built by engineers who&apos;d rather ship systems that fit than
-              sell software that almost works. We design, build, host, and maintain — end to end —
+              sell software that almost works. We design, build, host, and maintain end to end,
               with a bias toward reliability and clarity over hype.
             </p>
           </div>
@@ -104,10 +104,9 @@ export function AboutSection() {
           </h3>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
             INNOVI Solutions was founded by four engineers who all hold postgraduate degrees in
-            Computer Science from the University of Cape Town (UCT) — the top-ranked university in
-            Africa. Between us we cover the full arc of a build: understanding the business,
-            modelling the data, engineering the software and AI, automating the busywork, and
-            rigorously evaluating what ships.
+            Computer Science. Between us we cover the full arc of a build: understanding the
+            business, modelling the data, engineering the software and AI, automating the
+            busywork, and rigorously evaluating what ships.
           </p>
         </div>
 
@@ -137,7 +136,7 @@ export function AboutSection() {
         </div>
 
         <p className="mt-10 text-sm font-mono text-muted-foreground max-w-3xl">
-          Shared credentials: MSc / postgraduate Computer Science, University of Cape Town ·
+          Shared credentials: MSc / postgraduate degrees in Computer Science ·
           combined experience across business analysis, data modelling, AI engineering, automation,
           evaluation, and software engineering.
         </p>

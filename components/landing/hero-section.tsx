@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import { AnimatedSphere } from "./animated-sphere";
 
 const words = ["fits", "ships", "scales", "lasts"];
@@ -108,7 +107,7 @@ export function HeroSection() {
             }`}
           >
             INNOVI SOLUTIONS designs and builds software, data systems, and AI agents
-            shaped around how your business actually operates — then hosts and maintains them.
+            shaped around how your business actually operates, then hosts and maintains them.
           </p>
           
           {/* CTAs */}
@@ -124,7 +123,6 @@ export function HeroSection() {
             >
               <a href="/book">
                 Book a Session
-                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
             <Button 
@@ -139,38 +137,6 @@ export function HeroSection() {
         </div>
         
       </div>
-      
-      {/* Stats marquee - full width outside container */}
-      <div 
-        className={`absolute bottom-24 left-0 right-0 transition-all duration-700 delay-500 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <div className="flex gap-16 marquee whitespace-nowrap">
-          {[...Array(2)].map((_, i) => (
-            <div key={i} className="flex gap-16">
-              {[
-                { value: "4", label: "co-founders, hands-on", company: "EVERY BUILD" },
-                { value: "4", label: "postgraduate CS degrees", company: "UCT" },
-                { value: "#1", label: "university in Africa", company: "CAPE TOWN" },
-                { value: "6", label: "disciplines in-house", company: "END-TO-END" },
-                { value: "7", label: "core technologies", company: "THE STACK" },
-              ].map((stat) => (
-                <div key={`${stat.company}-${i}`} className="flex items-baseline gap-4">
-                  <span className="text-4xl lg:text-5xl font-display">{stat.value}</span>
-                  <span className="text-sm text-muted-foreground">
-                    {stat.label}
-                    <span className="block font-mono text-xs mt-1">{stat.company}</span>
-                  </span>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-      
-      {/* Scroll indicator */}
-      
     </section>
   );
 }

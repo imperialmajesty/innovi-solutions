@@ -7,16 +7,16 @@ const products = [
     tab: "Cadence",
     name: "Cadence",
     tagline: "Booking & Scheduling",
-    setup: "from R15,000",
-    monthly: "from R1,200 / month",
+    setup: "Custom quote",
+    monthly: "Custom quote / month",
     lines: [
-      "Cadence — Booking & Scheduling",
+      "Cadence: Booking & Scheduling",
       "",
-      "A booking and reservation system built",
-      "around how you actually take appointments:",
-      "custom availability rules, automated",
-      "reminders, payments, and a calendar your",
-      "team already trusts.",
+      "A booking and reservation system we can",
+      "build around how you actually take",
+      "appointments: custom availability rules,",
+      "automated reminders, payments, and a",
+      "calendar your team will trust.",
       "",
       "Ideal for clinics, studios, consultants,",
       "and service businesses.",
@@ -26,36 +26,35 @@ const products = [
     tab: "Signal",
     name: "Signal",
     tagline: "AI Reporting Analyst",
-    setup: "from R30,000",
-    monthly: "from R3,500 / month",
+    setup: "Custom quote",
+    monthly: "Custom quote / month",
     lines: [
-      "Signal — AI Reporting Analyst",
+      "Signal: AI Reporting Analyst",
       "",
-      "Plug Signal into your company database and",
-      "it does the analysis for you. It reads your",
-      "data, runs the numbers, and delivers",
-      "scheduled weekly or monthly reports straight",
-      "to stakeholders — clear, on time, and no",
-      "analyst required.",
+      "We build Signal to plug into your company",
+      "database and handle the analysis for you:",
+      "reading your data, running the numbers, and",
+      "delivering scheduled weekly or monthly reports",
+      "straight to stakeholders, clear and on time.",
       "",
-      "Your always-on data team member.",
+      "An always available member of your data team.",
     ],
   },
   {
     tab: "Prism",
     name: "Prism",
-    tagline: "Ask-Your-Data Agent",
-    setup: "from R28,000",
-    monthly: "from R3,000 / month",
+    tagline: "Ask Your Data Agent",
+    setup: "Custom quote",
+    monthly: "Custom quote / month",
     lines: [
-      "Prism — Ask-Your-Data Agent",
+      "Prism: Ask Your Data Agent",
       "",
-      "Let anyone on your team ask questions in",
-      "plain language — \"how did sales track last",
-      "quarter?\" — and get a clear, sourced answer",
-      "back in seconds.",
+      "We build Prism so anyone on your team can",
+      "ask questions in plain language, like how",
+      "did sales track last quarter, and get a",
+      "clear, sourced answer back in seconds.",
       "",
-      "Prism turns everyday questions into on-demand",
+      "Prism turns everyday questions into on demand",
       "reports, so insight isn't gated behind whoever",
       "knows how to write the query.",
     ],
@@ -64,18 +63,18 @@ const products = [
     tab: "Storefront",
     name: "Storefront",
     tagline: "Custom Commerce Platform",
-    setup: "from R45,000",
-    monthly: "from R4,500 / month",
+    setup: "Custom quote",
+    monthly: "Custom quote / month",
     lines: [
-      "Storefront — Custom Commerce Platform",
+      "Storefront: Custom Commerce Platform",
       "",
       "A branded online store and ordering system",
-      "built for your catalogue — a marketplace-style",
-      "buying experience customised to your",
+      "we build for your catalogue: a marketplace",
+      "style buying experience customised to your",
       "merchandise, logistics, and customers.",
       "",
       "Listings, cart, checkout, orders, and",
-      "fulfilment in one platform you own.",
+      "fulfilment in one platform you'll own.",
     ],
   },
 ];
@@ -87,7 +86,7 @@ const highlights = [
   },
   {
     title: "Hosting included",
-    description: "We host, monitor, and maintain every product.",
+    description: "We host, monitor, and maintain what we build for you.",
   },
   {
     title: "Forged to fit",
@@ -95,7 +94,7 @@ const highlights = [
   },
   {
     title: "You own it",
-    description: "Your system and your data — always.",
+    description: "Your system and your data, always.",
   },
 ];
 
@@ -105,20 +104,20 @@ const codeAnimationStyles = `
     transform: translateX(-8px);
     animation: devLineReveal 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
-  
+
   @keyframes devLineReveal {
     to {
       opacity: 1;
       transform: translateX(0);
     }
   }
-  
+
   .dev-code-char {
     opacity: 0;
     filter: blur(8px);
     animation: devCharReveal 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
-  
+
   @keyframes devCharReveal {
     to {
       opacity: 1;
@@ -162,14 +161,12 @@ export function DevelopersSection() {
               Products
             </span>
             <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-8">
-              Proven Products.
-              <br />
-              <span className="text-muted-foreground">Forged to Your Business.</span>
+              Forged to Your Business.
             </h2>
             <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              Software you don&apos;t have to build from scratch. Each product is a proven core we
-              stand up quickly, then shape to your brand, your rules, and your data. Setup fee plus
-              a monthly subscription — hosting, updates, and support included.
+              Products we can design and build around a tested foundation, then shape to your
+              brand, your rules, and your data. Setup fee plus a monthly subscription, hosting,
+              updates, and support included.
             </p>
 
             {/* Highlights */}
@@ -235,7 +232,7 @@ export function DevelopersSection() {
                               animationDelay: `${lineIndex * 80 + charIndex * 15}ms`,
                             }}
                           >
-                            {char === " " ? "\u00A0" : char}
+                            {char === " " ? " " : char}
                           </span>
                         ))}
                       </span>
