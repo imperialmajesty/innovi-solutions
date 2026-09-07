@@ -134,31 +134,31 @@ export function DevelopersSection() {
   const active = products[activeTab];
 
   return (
-    <section id="products" ref={sectionRef} className="relative py-24 lg:py-32 overflow-hidden">
+    <section id="products" ref={sectionRef} className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
       <style dangerouslySetInnerHTML={{ __html: codeAnimationStyles }} />
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           {/* Left: Content */}
           <div
             className={`transition-all duration-700 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6 uppercase tracking-widest">
+            <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-5 sm:mb-6 uppercase tracking-widest">
               <span className="w-8 h-px bg-foreground/30" />
               Products
             </span>
-            <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-8">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display tracking-tight mb-6 sm:mb-8">
               Forged to Your Business.
             </h2>
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+            <p className="text-lg sm:text-xl text-muted-foreground mb-8 sm:mb-12 leading-relaxed">
               Products we can design and build around a tested foundation, then shape to your
               brand, your rules, and your data. Setup fee plus a monthly subscription, hosting,
               updates, and support included.
             </p>
 
             {/* Highlights */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {highlights.map((highlight, index) => (
                 <div
                   key={highlight.title}
@@ -188,7 +188,7 @@ export function DevelopersSection() {
                     key={product.tab}
                     type="button"
                     onClick={() => setActiveTab(idx)}
-                    className={`px-6 py-4 text-sm font-mono transition-colors relative whitespace-nowrap ${
+                    className={`px-4 sm:px-6 py-3 sm:py-4 text-sm font-mono transition-colors relative whitespace-nowrap ${
                       activeTab === idx
                         ? "text-foreground"
                         : "text-muted-foreground hover:text-foreground"
@@ -203,16 +203,15 @@ export function DevelopersSection() {
               </div>
 
               {/* Panel content */}
-              <div className="p-8 font-mono text-sm bg-foreground/[0.01] min-h-[280px]">
-                <pre className="text-foreground/80">
+              <div className="p-5 sm:p-6 lg:p-8 font-mono text-xs sm:text-sm bg-foreground/[0.01] min-h-[280px]">
+                <pre className="text-foreground/80 whitespace-pre-wrap break-words">
                   {active.lines.map((line, lineIndex) => (
                     <div
                       key={`${activeTab}-${lineIndex}`}
                       className="leading-loose dev-code-line"
                       style={{ animationDelay: `${lineIndex * 80}ms` }}
                     >
-                      <span className="inline-flex">
-                        {line.split("").map((char, charIndex) => (
+                      {line.split("").map((char, charIndex) => (
                           <span
                             key={`${activeTab}-${lineIndex}-${charIndex}`}
                             className="dev-code-char"
@@ -223,7 +222,6 @@ export function DevelopersSection() {
                             {char === " " ? " " : char}
                           </span>
                         ))}
-                      </span>
                     </div>
                   ))}
                 </pre>
