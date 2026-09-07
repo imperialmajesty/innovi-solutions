@@ -104,12 +104,12 @@ export function AboutSection() {
           </h3>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl">
             INNOVI Solutions was founded by four engineers with diverse postgraduate academic
-            backgrounds spanning Computer Science, Information Systems, and Property Studies, with
-            qualifications from the University of Cape Town (UCT) and the University of the
-            Western Cape (UWC). Together, we bring a multidisciplinary approach to technology,
+            backgrounds spanning Computer Science, Informations Systems and Propersty  Studeis,
+            with qualifications from the University of Cape Town (UCT) and University of the
+            Western Cape (UWC). Togetehr, we bring a multidisciplinary approach to technology -
             combining business and industry understanding with software engineering, data
-            modelling, AI, process automation, and rigorous solution testing to deliver technology
-            that addresses real world business needs.
+            modelling, AI, process automation and rigorus solution testing to deliver technology
+            that addresses real-world business needs.
           </p>
         </div>
 

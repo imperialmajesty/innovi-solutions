@@ -6,9 +6,6 @@ const products = [
   {
     tab: "Cadence",
     name: "Cadence",
-    tagline: "Booking & Scheduling",
-    setup: "Custom quote",
-    monthly: "Custom quote / month",
     lines: [
       "Cadence: Booking & Scheduling",
       "",
@@ -25,9 +22,6 @@ const products = [
   {
     tab: "Signal",
     name: "Signal",
-    tagline: "AI Reporting Analyst",
-    setup: "Custom quote",
-    monthly: "Custom quote / month",
     lines: [
       "Signal: AI Reporting Analyst",
       "",
@@ -43,9 +37,6 @@ const products = [
   {
     tab: "Prism",
     name: "Prism",
-    tagline: "Ask Your Data Agent",
-    setup: "Custom quote",
-    monthly: "Custom quote / month",
     lines: [
       "Prism: Ask Your Data Agent",
       "",
@@ -62,9 +53,6 @@ const products = [
   {
     tab: "Storefront",
     name: "Storefront",
-    tagline: "Custom Commerce Platform",
-    setup: "Custom quote",
-    monthly: "Custom quote / month",
     lines: [
       "Storefront: Custom Commerce Platform",
       "",
@@ -239,20 +227,6 @@ export function DevelopersSection() {
                     </div>
                   ))}
                 </pre>
-              </div>
-
-              {/* Pricing footer */}
-              <div className="px-6 py-4 border-t border-foreground/10 flex flex-wrap items-center gap-x-6 gap-y-2">
-                <span className="text-xs font-mono text-muted-foreground uppercase tracking-widest">
-                  {active.tagline}
-                </span>
-                <span className="flex-1" />
-                <span className="text-sm">
-                  <span className="text-muted-foreground">Setup </span>
-                  {active.setup}
-                </span>
-                <span className="text-foreground/20">|</span>
-                <span className="text-sm">{active.monthly}</span>
               </div>
             </div>
 
