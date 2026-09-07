@@ -30,8 +30,8 @@ export function Navigation({ hrefPrefix = "" }: { hrefPrefix?: string }) {
           : "top-0 left-0 right-0"
       }`}
     >
-      <nav 
-        className={`mx-auto transition-all duration-500 ${
+      <nav
+        className={`relative z-50 mx-auto transition-all duration-500 ${
           isScrolled || isMobileMenuOpen
             ? "bg-background/80 backdrop-blur-xl border border-foreground/10 rounded-2xl shadow-lg max-w-[1200px]"
             : "bg-transparent max-w-[1400px]"
