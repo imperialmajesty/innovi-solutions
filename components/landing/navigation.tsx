@@ -79,10 +79,14 @@ export function Navigation({ hrefPrefix = "" }: { hrefPrefix?: string }) {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-sm font-medium uppercase tracking-widest"
-            aria-label="Toggle menu"
+            className="md:hidden p-2"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
-            {isMobileMenuOpen ? "Close" : "Menu"}
+            {isMobileMenuOpen ? (
+              <span className="text-2xl leading-none">&times;</span>
+            ) : (
+              <span className="text-sm font-medium uppercase tracking-widest">Menu</span>
+            )}
           </button>
         </div>
 
