@@ -6,7 +6,6 @@ const footerLinks = {
   "Quick Links": [
     { name: "Services", href: "#services" },
     { name: "Products", href: "#products" },
-    { name: "Pricing", href: "#pricing" },
     { name: "How We Work", href: "#how-we-work" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },

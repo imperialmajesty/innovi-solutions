@@ -43,17 +43,17 @@ export function AboutSection() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="relative py-24 lg:py-32 border-t border-foreground/10">
+    <section id="about" ref={sectionRef} className="relative py-16 sm:py-24 lg:py-32 border-t border-foreground/10">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 mb-20 lg:mb-28">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-20 mb-14 sm:mb-20 lg:mb-28">
           <div className="lg:col-span-7">
-            <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6 uppercase tracking-widest">
+            <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-5 sm:mb-6 uppercase tracking-widest">
               <span className="w-8 h-px bg-foreground/30" />
               About
             </span>
             <h2
-              className={`text-4xl lg:text-6xl font-display tracking-tight mb-8 transition-all duration-700 ${
+              className={`text-4xl sm:text-5xl lg:text-6xl font-display tracking-tight mb-6 sm:mb-8 transition-all duration-700 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
@@ -62,7 +62,7 @@ export function AboutSection() {
               <span className="text-muted-foreground">the Forge.</span>
             </h2>
             <p
-              className={`text-xl text-muted-foreground leading-relaxed max-w-xl transition-all duration-700 delay-100 ${
+              className={`text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl transition-all duration-700 delay-100 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
@@ -94,19 +94,22 @@ export function AboutSection() {
         </div>
 
         {/* Team */}
-        <div className="mb-12">
-          <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6 uppercase tracking-widest">
+        <div className="mb-10 sm:mb-12">
+          <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-5 sm:mb-6 uppercase tracking-widest">
             <span className="w-8 h-px bg-foreground/30" />
             The Team
           </span>
-          <h3 className="text-3xl lg:text-5xl font-display tracking-tight mb-6">
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-display tracking-tight mb-5 sm:mb-6 text-balance">
             Four Founders. One Forge.
           </h3>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
-            INNOVI Solutions was founded by four engineers who all hold postgraduate degrees in
-            Computer Science. Between us we cover the full arc of a build: understanding the
-            business, modelling the data, engineering the software and AI, automating the
-            busywork, and rigorously evaluating what ships.
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl">
+            INNOVI Solutions was founded by four engineers with diverse postgraduate academic
+            backgrounds spanning Computer Science, Information Systems, and Property Studies, with
+            qualifications from the University of Cape Town (UCT) and the University of the
+            Western Cape (UWC). Together, we bring a multidisciplinary approach to technology,
+            combining business and industry understanding with software engineering, data
+            modelling, AI, process automation, and rigorous solution testing to deliver technology
+            that addresses real world business needs.
           </p>
         </div>
 
@@ -114,12 +117,12 @@ export function AboutSection() {
           {team.map((member, i) => (
             <div
               key={member.role}
-              className={`group bg-background p-8 lg:p-10 transition-all duration-700 hover:bg-foreground/[0.02] ${
+              className={`group bg-background p-6 sm:p-8 lg:p-10 transition-all duration-700 hover:bg-foreground/[0.02] ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
               }`}
               style={{ transitionDelay: `${i * 120}ms` }}
             >
-              <div className="flex items-start justify-between mb-6">
+              <div className="flex items-start justify-between mb-5 sm:mb-6">
                 <span className="font-mono text-sm text-muted-foreground">
                   0{i + 1}
                 </span>
@@ -127,7 +130,7 @@ export function AboutSection() {
                   N
                 </span>
               </div>
-              <h4 className="font-display text-xl lg:text-2xl tracking-tight mb-4 text-balance">
+              <h4 className="font-display text-xl lg:text-2xl tracking-tight mb-3 sm:mb-4 text-balance">
                 {member.role}
               </h4>
               <p className="text-muted-foreground leading-relaxed">{member.bio}</p>
@@ -135,10 +138,10 @@ export function AboutSection() {
           ))}
         </div>
 
-        <p className="mt-10 text-sm font-mono text-muted-foreground max-w-3xl">
-          Shared credentials: MSc / postgraduate degrees in Computer Science ·
-          combined experience across business analysis, data modelling, AI engineering, automation,
-          evaluation, and software engineering.
+        <p className="mt-8 sm:mt-10 text-sm font-mono text-muted-foreground max-w-3xl">
+          Shared credentials: postgraduate degrees across Computer Science, Information Systems,
+          and Property Studies · combined experience across business analysis, data modelling, AI
+          engineering, automation, evaluation, and software engineering.
         </p>
       </div>
     </section>
